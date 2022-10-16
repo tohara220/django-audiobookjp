@@ -1,2 +1,8 @@
-<h1>新しいアプリ</h1>
-<p>新しいアプリのトップページです。</p>
+<h2>audiobook.jpランキング（更新日時: {{ date }}）</h2>
+
+{% for title_elm in ranking %}
+  <h3>第{{ forloop.counter }}位</h3>
+  {% for elm in title_elm %}
+    {{ elm|urlize}}<br />
+  {% endfor %}
+{% endfor %}
