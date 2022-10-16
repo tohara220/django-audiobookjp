@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-from bs4 import BeautifulSoup
 
 url_ranking = 'https://audiobook.jp/ranking/product-total'
 
